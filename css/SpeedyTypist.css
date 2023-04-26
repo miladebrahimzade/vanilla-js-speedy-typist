@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'yekan';
+  src: url(../Font/Yekan.woff) format('woff'),
+    url('../Font/Yekan.ttf') format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  margin: 0;
+  font-family: 'yekan';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.centered {
+  margin: 0 auto;
+  display: block;
+  max-width: 46em;
+}
+/* header section */
+header {
+  display: flex;
+  background-color: #03202b;
+  justify-content: center;
+  color: white;
+  padding: 1em;
+}
+
+/* main area */
+#intro {
+  background-color: #3a8b87;
+  color: white;
+  display: flex;
+  text-align: justify;
+  padding-bottom: 0.8em;
+}
+#intro h2 {
+  font-size: 1.3em;
+}
+
+#origin-text {
+  margin: 1em 0;
+  padding: 0 1em 0 1em;
+  background-color: #ededed;
+  text-align: justify;
+  display: flex;
+}
+.test-wrapper {
+  border: 10px solid grey;
+  border-radius: 10px;
+  display: flex;
+}
+.test-wrapper textarea {
+  flex: 1;
+  font-family: 'yekan';
+}
+
+.hide {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.meta {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.timer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#reset {
+  font-family: 'yekan';
+  padding: 0.8em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #e95d0f;
+  background: white;
+  border: 10px solid #e95d0f;
+  margin-bottom: 0.8em;
+}
+
+#reset:hover {
+  color: white;
+  background-color: #e95d0f;
+}
+#next {
+  font-family: 'yekan';
+  padding: 0.8em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: gray;
+  background: white;
+  border: 10px solid gray;
+}
+#next.activate {
+  color: green;
+  border: 10px solid green;
+}
+#next.activate:hover {
+  color: white;
+  background-color: green;
+}
+#match {
+  font-family: 'yekan';
+  padding: 0.8em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: green;
+  background: white;
+  border: 10px solid green;
+  margin-bottom: 0.8em;
+}
+#match:hover {
+  color: white;
+  background-color: green;
+}
+
+footer {
+  background-color: #074158;
+}
+.footer {
+  padding: 24px 0;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
